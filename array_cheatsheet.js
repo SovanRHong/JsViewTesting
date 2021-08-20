@@ -2,7 +2,7 @@
 const colors = ["red", "orange", "yellow"];
 
 // Arrays are indexed like strings:
-colors[0]; // "red"
+console.log(colors[0][0]); // "red"
 
 // They have a length:
 colors.length; //3
@@ -13,3 +13,11 @@ colors.length; //3
 
 //unshift(val) - adds value to START of an array
 //shift() - removes and returns first element in an array
+
+const nums = [1, 2, 3, 4];
+
+console.log(nums);
+
+nums.push(5);
+
+console.log(nums);
