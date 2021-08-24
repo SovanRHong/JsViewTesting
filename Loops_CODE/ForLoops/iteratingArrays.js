@@ -322,6 +322,6 @@ const animals = [
 //     console.log(i, animals[i])
 // }
 
-for (let i = animals.length - 1; i >= 0; i--) {
-  console.log(animals[i]);
-}
+// for (let i = animals.length - 1; i >= 0; i--) {
+//   console.log(animals[i]);
+// }
