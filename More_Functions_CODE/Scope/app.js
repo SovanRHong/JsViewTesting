@@ -3,18 +3,28 @@
 // ==============
 let totalEggs = 0;
 function collectEggs() {
-    totalEggs = 6;
+  totalEggs = 6;
 }
 console.log(totalEggs);
 collectEggs();
 console.log(totalEggs);
 
-const bird = 'Scarlet Macaw';
+const bird = "Scarlet Macaw";
 function birdWatch() {
-    const bird = 'Great Blue Heron';
-    console.log(bird);
+  const bird = "Great Blue Heron";
+  console.log(bird);
 }
-birdWatch()
+birdWatch();
+
+let deadlyAnimal = "Blue-Ringed Octopus";
+
+function handleAnimal() {
+  let deadlyAnimal = "Scorpionfish";
+  console.log(deadlyAnimal);
+}
+
+handleAnimal();
+console.log(deadlyAnimal);
 
 // ==============
 // BLOCK SCOPE
@@ -27,27 +37,27 @@ birdWatch()
 // console.log(radius);
 // console.log(msg)
 
-// for (let i = 0; i < 5; i++) {
-//     let msg = "ASKLDJAKLSJD";
-//     console.log(msg)
-// }
-// console.log(msg)
-// console.log(i)
+for (let i = 0; i < 5; i++) {
+  let msg = "ASKLDJAKLSJD";
+  console.log(msg);
+}
+console.log(msg);
+console.log(i);
 
 // ==============
 // LEXICAL SCOPE
 // ==============
 
 function bankRobbery() {
-    const heroes = ['Spiderman', 'Wolverine', 'Black Panther', 'Batwoman']
-    function cryForHelp() {
-        let color = 'purple';
-        function inner() {
-            for (let hero of heroes) {
-                console.log(`PLEASE HELP US, ${hero.toUpperCase()}`)
-            }
-        }
-        inner();
+  const heroes = ["Spiderman", "Wolverine", "Black Panther", "Batwoman"];
+  function cryForHelp() {
+    let color = "purple";
+    function inner() {
+      for (let hero of heroes) {
+        console.log(`PLEASE HELP US, ${hero.toUpperCase()}`);
+      }
     }
-    cryForHelp();
+    inner();
+  }
+  cryForHelp();
 }
