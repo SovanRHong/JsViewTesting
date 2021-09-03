@@ -31,8 +31,6 @@ login("todd", "corgifeetarecute")
     console.log(err);
   });
 
-xml;
-
 const delayedColorChange = (color, delay) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
