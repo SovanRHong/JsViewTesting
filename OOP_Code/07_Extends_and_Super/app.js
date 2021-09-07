@@ -28,4 +28,3 @@ class Dog extends Pet {
     return `${this.name} scarfs his food!`;
   }
 }
-huh;
